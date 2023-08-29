@@ -2,6 +2,8 @@
 
 ## Description
 
+Note taker that be used to write and save notes using express.js, and node.js to retrieve note data from a json file.The final application connects frontend to backend then deploy to heroku.
+
 ## Table of Contents
 
 - [Installation](#installation)
