@@ -23,12 +23,11 @@ notes.get('/:notes_id', (req, res) => {
 });
 
 // Delete
-notes.delete('/:notes_id', (req, res) => {
-    const notesId = req.params.notes_id;
+notes.delete('/:id', (req, res) => {
+    const notesId = req.params.id;
     readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
         .then((json) => {
-            // Make a new array of all tips except the one with the ID provided in the URL
             const result = json.filter((notes) => notes.notes_id !== notesId);
 
             // Save that array to the filesystem
@@ -47,7 +46,7 @@ notes.post('/', (req, res) => {
         const newNotes = {
             title,
             text,
-            tip_id: uuidv4(),
+            id: uuidv4(),
         };
 
         readAndAppend(newNotes, './db/db.json');
