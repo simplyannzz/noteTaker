@@ -18,7 +18,7 @@ I used the tools that I had on my computer, like Git, Vscode, Github, and Google
 
 ## Usage
 
-![alt text](./)
+![alt text](./usage.png)
 
 ## Credits
 
