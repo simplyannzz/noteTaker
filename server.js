@@ -32,7 +32,7 @@ app.get('/', (req, res) =>
 
 // GET Route for notes page
 app.get('/notes', (req, res) =>
-    res.sendFile(path.join(__dirname, './public/notes.html'))
+    res.sendFile(path.join(__dirname, './notes.html'))
 );
 app.get('/api/notes', (req, res) => {
     // res.sendFile(path.join(__dirname, './db/db.json'))
