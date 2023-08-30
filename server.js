@@ -4,7 +4,7 @@ const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 
 // const { clog } = require('./middleware/clog');
-const notes = require('./routes/notes.js');
+const notes = require('./routes/notesRoutes.js');
 const {
     readFromFile,
     readAndAppend,
